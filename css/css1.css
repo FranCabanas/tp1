@@ -208,6 +208,7 @@ footer {
     background-color: #24303c;
     width: 100%;
     bottom: 0;
+    color: white;
 }
 
 .contenido-tarjeta {
@@ -354,13 +355,17 @@ footer {
     padding-top: 10px;
    }
    .flecha {
-    padding: 5px 10px;
+    margin: 5px;
+    margin-left: 5px;
    }
    .flecha:hover {
     box-shadow: 1px 1px 200px #252525;
     color: #fff;
     border-color: black;
-    background-color:#4d77a1a4;
+    border-radius: 50%;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(118, 136, 214, 0.678);
+    transition: all 0.5s;
    }
    .cuerpo {
     display: flex;
