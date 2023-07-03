@@ -1,0 +1,367 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url("../fondo.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: #223446;
+    align-items: center;
+    padding: 10px;
+}
+
+header h2 {
+    font-family: fantasy;
+    color: rgb(221, 221, 221);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+section a:hover {
+    color: black !important;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    color: white !important;
+    height: 100%;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: wheat !important;
+    background-color: #3e5d7c;
+    
+
+}
+nav button:hover {
+    color: wheat !important;
+    background-color: #3e5d7c;
+    
+}
+.nav-link {
+ 
+font-size: 22px;
+}
+
+nav {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items:baseline;
+ 
+   
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+.form-register {
+    width: 40%;
+    height: 100%;
+    background: #24303ca4;
+    border: solid 2px #1e2329a4;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-family: 'calibri';
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+
+.controls {
+    width: 80%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    color: white;
+}
+
+#formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+hr {
+    border: solid 1px #3d4349 !important;
+}
+
+.iconos {
+    width: 230px;
+}
+
+.tarjetas {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.tarjeta {
+    height: 500px !important;
+    background-color: #24303ca4;
+    padding: 30px;
+    border: solid 2px #1e2329a4;
+    transition: all 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tarjeta:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #24303cbd;
+    
+}
+
+
+.combo {
+    width: 100%;
+    height: 230px;
+    background-image: url(../banner2.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 20px;
+    padding-right: 0px;
+}
+
+.art-combo {
+    width: 60%;
+    justify-content: center;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+.art-combo:hover {
+    border: solid 0px #95b0ca;
+    opacity: 0.9;
+   
+    transition: all 0.3s;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.4);
+ 
+
+}
+
+
+
+.separacion {
+    border: solid 1px #3d4349;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+ 
+footer {
+    margin-top: 40px;
+    background-color: #24303c;
+    width: 100%;
+    bottom: 0;
+}
+
+.contenido-tarjeta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: rgba(65, 143, 196, 0.404);
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #a9cae4;
+    transition: all 0.5s ease-in-out;
+    
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border-color: black;
+    background-color:#4d77a1a4;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .precio {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .por-mes {
+    font-family: none;
+    font-weight:100;
+  }
+  .compra {
+    font-size: 25px;
+    width: 80%;
+  }
+  .selector {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+  }
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    width: auto !important;
+    margin-right: 0px !important;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: black;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .container input:checked ~ .checkmark {
+    background: black;
+    box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .container input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #f0f0f0;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
+   h4 {
+    padding-top: 10px;
+   }
+   .flecha {
+    padding: 5px 10px;
+   }
+   .flecha:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border-color: black;
+    background-color:#4d77a1a4;
+   }
+   .cuerpo {
+    display: flex;
+   }

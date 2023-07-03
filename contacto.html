@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo de encabezado">
+            <h2 class="titulo">DirectFly</h2>
+        </a>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <hr>
+            <a href="#" class="nav-link">Contacto</a>
+        </nav>
+
+    </header>
+
+
+
+    <div>
+        <section class="form-register">
+            <form id="formulario" onsubmit="preventDefault()" action="enviarDato()">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="number" name="documento" id="documento"
+                    placeholder="Ingrese su Nro. de Documento">
+                <input class="controls" type="date" name="fecha" id="fecha">
+
+
+
+
+
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <button onclick="enviarDato()">Aceptar</button>
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+            
+
+
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>@Copyright 2023</p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/js1.js"></script>
+
+</html>

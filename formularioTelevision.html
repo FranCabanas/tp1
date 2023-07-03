@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo de encabezado">
+            <h2 class="titulo">DirectFly</h2>
+        </a>
+        <nav>
+            <a href="index.html" class="btn nav-link">Inicio</a>
+            <hr>
+            <button  type="button" class="btn nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+               <img class="" src="carrito.png" alt=""> 
+            </button>
+        </nav>
+
+    </header>
+
+
+
+    <div class="cuerpo">
+        <a href="index.html"> <img src="flecha.png" class="flecha" alt=""></a>
+        <section class="form-register">
+            <form id="formulario" onsubmit="preventDefault()" action="enviarDato()">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <select class="controls" type="selector" value="" name="apellidos" id="sexo" placeholder="Sexo">
+                    <option value="" disabled selected>Selecciona una opción...</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Prefiero no aclararlo">Prefiero no aclararlo</option>
+                </select>
+                <hr class="separacion">
+
+
+                <ul class="compra">
+                    <li class="selector">
+                        <div> <img src="television.png" alt=""> 200 CANALES + HD
+                            <span>
+                                <p class="precio"> <span class="valor"> $2.690 </span><span class="por-mes"> por mes. </span></p>
+                            </span>
+                        </div>
+                         <label class="container">
+                            <input  type="checkbox" class="check" value="$2.690">
+                            <div class="checkmark"></div>
+                        </label>
+                    </li>
+                    <li class="selector">
+                        <div> <img src="television.png" alt=""> 600 CANALES + HD
+                            <span>
+                                <p class="precio">$4.290<span class="por-mes"> por mes.</span></p>
+                            </span>
+                        </div>
+                         <label class="container">
+                            <input  type="checkbox" class="check" value="$4.290">
+                            <div class="checkmark"></div>
+                        </label>
+                    </li>
+                    <li class="selector">
+                        <div><img src="television.png" alt=""> 600 CANALES + 4K
+                            <span>
+                                <p class="precio">$6.590 <span class="por-mes"> por mes.</span></p>
+                            </span>
+                        </div>
+                         <label class="container">
+                            <input  type="checkbox" class="check" value="$6.590">
+                            <div class="checkmark"></div>
+                        </label>
+                    </li>
+                </ul>
+
+                <button id="enviar">Aceptar</button>
+
+            </form>
+        </section>
+       
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                    <th scope="col">Pack</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cont-tabla">
+                             
+                        
+                           
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>@Copyright 2023</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/js1.js"></script>
+
+</html>
